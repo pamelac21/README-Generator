@@ -48,7 +48,7 @@ const questions = [
         name: 'license',
         message: 'Choose a license for your project: ',
         choices: [
-          'ODbL', 'Apache', 'MIT',
+          'Mozilla', 'Apache', 'MIT',
         ]}
     
     ]
