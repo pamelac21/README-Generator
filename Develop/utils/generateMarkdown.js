@@ -27,47 +27,45 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   const license = renderLicenseBadge()
   const licenseLink = renderLicenseLink()
-  return `
-    # ${data.title}
+  return `# ${data.title}
 
-    ${license}
-    ![${data.license}](https://img.shields.io/badge/license-${data.license}-blueviolet)
+        ![${data.license}](https://img.shields.io/badge/license-${data.license}-blueviolet)
 
-    ## Table of Contents
-    - [Description](#description)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [License](#license)
-    - [Contributing](#contributing)
-    - [Tests](#tests)
-    - [Questions](#questions)
+        ## Table of Contents
+        * [Description](#description)
+        * [Installation](#installation)
+        * [Usage](#usage)
+        * [License](#license)
+        * [Contributing](#contributing)
+        * [Tests](#tests)
+        * [Questions](#questions)
 
-    ## Description
-    ${data.motivation}
-    ${data.build}
-    ${data.solve}
-    ${data.challenges}
-    ${data.special}
+        ## Description
+        ${data.motivation}
+        ${data.build}
+        ${data.solve}
+        ${data.challenges}
+        ${data.special}
 
-    ## Installation
-    ${data.installation}
+        ## Installation
+        ${data.installation}
 
-    ## Usage
-    ${data.usage}
+        ## Usage
+        ${data.usage}
 
-    ## License
-    ${licenseLink}
+        ## License
+        ${licenseLink}
 
-    ## Contributing
-    ${data.contributing}
+        ## Contributing
+        ${data.contributing}
 
-    ## Tests
-    ${data.tests}
+        ## Tests
+        ${data.tests}
 
-    ## Questions
-    GitHub: ${data.github}
-    email: ${data.email}
-    ${data.questions}
+        ## Questions
+        GitHub: ${data.github}
+        email: ${data.email}
+        ${data.questions}
 `;
 }
 
