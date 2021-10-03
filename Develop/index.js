@@ -7,48 +7,48 @@ const generateMarkdown = require('./utils/generateMarkdown')
 const questions = [
     {type: 'input',
     message: 'What is the title of your project?',
-    name: 'Title'},
+    name: 'title'},
     {type: 'input',
     message: 'What was your motivation?',
-    name: 'Description'},
+    name: 'description'},
     {type: 'input',
     message: 'Why did you build this project?',
-    name: 'Description'},
+    name: 'description'},
     {type: 'input',
     message: 'What problem does it solve?',
-    name: 'Description'},
+    name: 'description'},
     {type: 'input',
     message: 'What did you learn?',
-    name: 'Description'},
+    name: 'description'},
     {type: 'input',
     message: 'What makes your project stand out?',
-    name: 'Description'},
+    name: 'description'},
     {type: 'input',
     message: 'What is your email address?',
-    name: 'Questions'},
+    name: 'questions'},
     {type: 'input',
     message: 'What is your GitHub username?',
-    name: 'Questions'},
+    name: 'questions'},
     {type: 'input',
     message: 'How should someone reach you with additional questions?',
-    name: 'Questions'},
+    name: 'questions'},
     {type: 'input',
     message: 'Instructions for installation:',
-    name: 'Installation'},
+    name: 'installation'},
     {type: 'input',
     message: 'Instructions for usage:',
-    name: 'Usage'},
+    name: 'usage'},
     {type: 'input',
     message: 'Instructions for contributing:',
-    name: 'Contributing'},
+    name: 'contributing'},
     {type: 'input',
-    message: '',
-    name: 'Tests'},
+    message: 'Test instructions:',
+    name: 'tests'},
     {   type: 'list',
-        name: 'License',
+        name: 'license',
         message: 'Choose a license for your project: ',
         choices: [
-          'Open', 'Apache', 'MIT',
+          'ODbL', 'Apache', 'MIT',
         ]}
     
     ]
@@ -57,21 +57,23 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
+    let content = generateMarkdown(data);
+    fs.writeFile(fileName, content, function (err) {
+        if(err){
+            console.log(err)
+        }else{
+            console.log('success')
+    }});
 
 }
 //const writeFileAsync = util.promisify(writeToFile);
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then(data => {
-        fs.writeFile('README.md', generateMarkdown(data), (err) => {
-            if(err){
-                console.log(err)
-            }else{
-                console.log('success')
-            }
-            }
-    )})
-        }
+        let fileName = 'README.md';
+        writeToFile(fileName, data)
+    })}
+        
 
 // Function call to initialize app
 init();
