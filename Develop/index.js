@@ -1,6 +1,8 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown')
+var util = require('util');
 // TODO: Create an array of questions for user input
 const questions = [
     {type: 'input',
@@ -42,32 +44,40 @@ const questions = [
     {type: 'input',
     message: '',
     name: 'Tests'},
-    {type: 'input',
-    message: '',
-    name: 'License'},
+    {   type: 'list',
+        name: 'License',
+        message: 'Choose an appropriate license for your project: ',
+        choices: [
+          'Open', 'Apache', 'MIT',
+        ]}
+    
+    ]
 
 
-];
-inquirer
-  .prompt([
-    {
-      type: 'checkbox',
-      name: 'License',
-      message: 'Which badges?',
-      choices: [
-        '', '', '', '',
-      ],
-    },
-  ])
-  .then(answers => {
-    console.info('Answer:', answers.License)
-  });
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        if (err) {
+          return console.log(err);
+        }
+      
+        console.log("Your README has been generated")
+    });
+}
+const writeFileAsync = util.promisify(writeToFile);
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions).then(data => {
+        fs.writeFile('README.md', generateMarkdown(data), (err) => {
+            if(err){
+                console.log(err)
+            }else{
+                console.log('success')
+            }
+            }
+    )})
+        }
 
 // Function call to initialize app
 init();
