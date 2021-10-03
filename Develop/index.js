@@ -2,7 +2,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown')
-var util = require('util');
+//var util = require('util');
 // TODO: Create an array of questions for user input
 const questions = [
     {type: 'input',
@@ -33,20 +33,20 @@ const questions = [
     message: 'How should someone reach you with additional questions?',
     name: 'Questions'},
     {type: 'input',
-    message: '',
+    message: 'Instructions for installation:',
     name: 'Installation'},
     {type: 'input',
-    message: '',
+    message: 'Instructions for usage:',
     name: 'Usage'},
     {type: 'input',
-    message: '',
+    message: 'Instructions for contributing:',
     name: 'Contributing'},
     {type: 'input',
     message: '',
     name: 'Tests'},
     {   type: 'list',
         name: 'License',
-        message: 'Choose an appropriate license for your project: ',
+        message: 'Choose a license for your project: ',
         choices: [
           'Open', 'Apache', 'MIT',
         ]}
@@ -57,15 +57,9 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, err => {
-        if (err) {
-          return console.log(err);
-        }
-      
-        console.log("Your README has been generated")
-    });
+
 }
-const writeFileAsync = util.promisify(writeToFile);
+//const writeFileAsync = util.promisify(writeToFile);
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then(data => {

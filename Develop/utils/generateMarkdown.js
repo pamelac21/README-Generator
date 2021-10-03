@@ -3,7 +3,7 @@
 function renderLicenseBadge(license) {
   return (
             `## License
-            ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)`
+            `
   )
 }
 
@@ -18,10 +18,10 @@ function renderLicenseSection(license) {}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   const license = renderLicenseBadge()
-  return `## ${data.title}
+  return `# ${data.title}
           ${license}
           ${data.description}
-          ${data.table-of-contents}
+          ${data.tableOfContents}
           ${data.installation}
           ${data.usage}
           ${data.license}
