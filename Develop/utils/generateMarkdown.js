@@ -8,11 +8,11 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if(license = 'Mozilla'){
-    return (`(https://opensource.org/licenses/MPL-2.0)`)
+    return (`https://opensource.org/licenses/MPL-2.0`)
 } else if (license = 'Apache') {
-  return (`(https://opensource.org/licenses/Apache-2.0)`)
+  return (`https://opensource.org/licenses/Apache-2.0`)
 } else if (license = 'MIT') {
-  return(`(https://opensource.org/licenses/MIT)`)
+  return(`https://opensource.org/licenses/MIT`)
   
 }else{
   return ('')
