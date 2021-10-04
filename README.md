@@ -1,6 +1,12 @@
  # README.md Generator
    
    ![MIT](https://img.shields.io/badge/license-MIT-blueviolet)
+   <img src="https://img.shields.io/badge/Javascript-yellow" />
+   <img src="https://img.shields.io/badge/jQuery-blue"  />
+   <img src="https://img.shields.io/badge/-node.js-green" />
+   <img src="https://img.shields.io/badge/-inquirer-red" >
+   <img src="https://img.shields.io/badge/-screencastify-lightgrey" />
+   <img src="https://img.shields.io/badge/-json-orange" />
    
   ## Table of Contents
   * [Description](#description)
