@@ -25,7 +25,7 @@
     Answer the questions in the command line to generate a README file.
 
 ## License
-    https://opensource.org/licenses/MPL-2.0
+    https://opensource.org/licenses/MIT
 
 ## Contributing
         
