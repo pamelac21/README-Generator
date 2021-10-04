@@ -66,7 +66,7 @@ function generateMarkdown(data) {
         GitHub: ${data.github}
         email: ${data.email}
         ${data.questions}
-`;
+        `;
 }
 
 module.exports = generateMarkdown;
