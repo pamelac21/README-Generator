@@ -22,7 +22,7 @@
 ## Usage
  Answer the questions in the command line to generate a README file.
  
-![](readme video.mp4)
+![](readme-video.mp4)
 
 ## License
  https://opensource.org/licenses/MIT
