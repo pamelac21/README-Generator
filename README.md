@@ -22,7 +22,7 @@
 ## Usage
  Answer the questions in the command line to generate a README file.
  
-![video](https://watch.screencastify.com/v/cv0fxIZLsGQqpt7K4rur)
+![](readmevideo.gif)
 [Watch full video!](https://watch.screencastify.com/v/cv0fxIZLsGQqpt7K4rur)
 
 ## License
