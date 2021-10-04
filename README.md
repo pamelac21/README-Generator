@@ -22,7 +22,8 @@
 ## Usage
  Answer the questions in the command line to generate a README file.
  
-![usageDisplay](./readme-video.mp4)
+ 
+[Watch full video!](https://watch.screencastify.com/v/cv0fxIZLsGQqpt7K4rur)
 
 ## License
  https://opensource.org/licenses/MIT
