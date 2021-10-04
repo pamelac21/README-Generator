@@ -1,7 +1,7 @@
  # README.md Generator
    
-   ![MIT](https://img.shields.io/badge/license-MIT-blueviolet) [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/Naereen/badges)
-
+   ![MIT](https://img.shields.io/badge/license-MIT-blueviolet)
+   
   ## Table of Contents
   * [Description](#description)
   * [Installation](#installation)
