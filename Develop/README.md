@@ -1,40 +1,39 @@
-# README.md Generator
+# Title
 
-        ![MIT](https://img.shields.io/badge/license-MIT-blueviolet)
+![badge](https://img.shields.io/badge/license-Mozilla-blueviolet)
 
-        ## Table of Contents
-        * [Description](#description)
-        * [Installation](#installation)
-        * [Usage](#usage)
-        * [License](#license)
-        * [Contributing](#contributing)
-        * [Tests](#tests)
-        * [Questions](#questions)
+## Table of Contents
+*  [Description](#description)
+*  [Installation](#installation)
+*  [Usage](#usage)
+*  [License](#license)
+*  [Contributing](#contributing)
+*  [Tests](#tests)
+*  [Questions](#questions)
 
-        ## Description
-        I wanted to create a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.
-        I built this project so that I can quickly create a professional README for a new project.
-        
-        
-        
+## Description
+Integer faucibus diam nec viverra pellentesque. Integer eu lobortis felis. Mauris tristique nisl vitae diam hendrerit interdum. Nulla dignissim laoreet felis. Praesent et lacus non nunc congue pharetra. Nullam ultrices nunc id diam rhoncus, id dapibus arcu volutpat. Morbi elementum arcu id fermentum dictum. Aenean luctus nulla sit amet aliquam tempor.
+Integer faucibus diam nec viverra pellentesque. Integer eu lobortis felis. Mauris tristique nisl vitae diam hendrerit interdum. Nulla dignissim laoreet felis. Praesent et lacus non nunc congue pharetra. Nullam ultrices nunc id diam rhoncus, id dapibus arcu volutpat. Morbi elementum arcu id fermentum dictum. Aenean luctus nulla sit amet aliquam tempor.
+Integer faucibus diam nec viverra pellentesque. Integer eu lobortis felis. Mauris tristique nisl vitae diam hendrerit interdum. Nulla dignissim laoreet felis. Praesent et lacus non nunc congue pharetra. Nullam ultrices nunc id diam rhoncus, id dapibus arcu volutpat. Morbi elementum arcu id fermentum dictum. Aenean luctus nulla sit amet aliquam tempor.
+Integer faucibus diam nec viverra pellentesque. Integer eu lobortis felis. Mauris tristique nisl vitae diam hendrerit interdum. Nulla dignissim laoreet felis. Praesent et lacus non nunc congue pharetra. Nullam ultrices nunc id diam rhoncus, id dapibus arcu volutpat. Morbi elementum arcu id fermentum dictum. Aenean luctus nulla sit amet aliquam tempor.
+Integer faucibus diam nec viverra pellentesque. Integer eu lobortis felis. Mauris tristique nisl vitae diam hendrerit interdum. Nulla dignissim laoreet felis. Praesent et lacus non nunc congue pharetra. Nullam ultrices nunc id diam rhoncus, id dapibus arcu volutpat. Morbi elementum arcu id fermentum dictum. Aenean luctus nulla sit amet aliquam tempor.
 
-        ## Installation
-        Using node.js, install inquirer by running: npm i inquirer
+## Installation
+Integer faucibus diam nec viverra pellentesque. Integer eu lobortis felis. Mauris tristique nisl vitae diam hendrerit interdum. Nulla dignissim laoreet felis. Praesent et lacus non nunc congue pharetra. Nullam ultrices nunc id diam rhoncus, id dapibus arcu volutpat. Morbi elementum arcu id fermentum dictum. Aenean luctus nulla sit amet aliquam tempor.
 
-        ## Usage
-        Answer the questions in the command line to generate a README file.
+## Usage
+Integer faucibus diam nec viverra pellentesque. Integer eu lobortis felis. Mauris tristique nisl vitae diam hendrerit interdum. Nulla dignissim laoreet felis. Praesent et lacus non nunc congue pharetra. Nullam ultrices nunc id diam rhoncus, id dapibus arcu volutpat. Morbi elementum arcu id fermentum dictum. Aenean luctus nulla sit amet aliquam tempor.
 
-        ## License
-        https://opensource.org/licenses/MPL-2.0
+## License
+[Covered under MPL](https://opensource.org/licenses/MPL-2.0)
 
-        ## Contributing
-        
+## Contributing
+Integer faucibus diam nec viverra pellentesque. Integer eu lobortis felis. Mauris tristique nisl vitae diam hendrerit interdum. Nulla dignissim laoreet felis. Praesent et lacus non nunc congue pharetra. Nullam ultrices nunc id diam rhoncus, id dapibus arcu volutpat. Morbi elementum arcu id fermentum dictum. Aenean luctus nulla sit amet aliquam tempor.
 
-        ## Tests
-        No testing currently available.
+## Tests
+Integer faucibus diam nec viverra pellentesque. Integer eu lobortis felis. Mauris tristique nisl vitae diam hendrerit interdum. Nulla dignissim laoreet felis. Praesent et lacus non nunc congue pharetra. Nullam ultrices nunc id diam rhoncus, id dapibus arcu volutpat. Morbi elementum arcu id fermentum dictum. Aenean luctus nulla sit amet aliquam tempor.
 
-        ## Questions
-        GitHub: pamelac21
-        email: pamelac021@gmail.com
-        
-        
+## Questions
+[GitHub](https://github.com/pamela21)
+[email](mailto:pamelac021@gmail.com)
+Integer faucibus diam nec viverra pellentesque. Integer eu lobortis felis. Mauris tristique nisl vitae diam hendrerit interdum. Nulla dignissim laoreet felis. Praesent et lacus non nunc congue pharetra. Nullam ultrices nunc id diam rhoncus, id dapibus arcu volutpat. Morbi elementum arcu id fermentum dictum. Aenean luctus nulla sit amet aliquam tempor.

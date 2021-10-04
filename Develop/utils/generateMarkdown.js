@@ -8,11 +8,11 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if(license = 'Mozilla'){
-    return (`https://opensource.org/licenses/MPL-2.0`)
-} else if (license = 'Apache') {
-  return (`https://opensource.org/licenses/Apache-2.0`)
-} else if (license = 'MIT') {
-  return(`https://opensource.org/licenses/MIT`)
+    return (`[Covered under MPL](https://opensource.org/licenses/MPL-2.0)`)
+} else if(license = 'Apache') {
+   return (`[Covered under Apache](https://opensource.org/licenses/Apache-2.0)`)
+} else if(license = 'MIT') {
+   return (`[Covered under MIT](https://opensource.org/licenses/MIT)`)
   
 }else{
   return ('')
@@ -29,44 +29,44 @@ function generateMarkdown(data) {
   const licenseLink = renderLicenseLink()
   return `# ${data.title}
 
-        ![${data.license}](https://img.shields.io/badge/license-${data.license}-blueviolet)
+![badge](https://img.shields.io/badge/license-${data.license}-blueviolet)
 
-        ## Table of Contents
-        * [Description](#description)
-        * [Installation](#installation)
-        * [Usage](#usage)
-        * [License](#license)
-        * [Contributing](#contributing)
-        * [Tests](#tests)
-        * [Questions](#questions)
+## Table of Contents
+*  [Description](#description)
+*  [Installation](#installation)
+*  [Usage](#usage)
+*  [License](#license)
+*  [Contributing](#contributing)
+*  [Tests](#tests)
+*  [Questions](#questions)
 
-        ## Description
-        ${data.motivation}
-        ${data.build}
-        ${data.solve}
-        ${data.challenges}
-        ${data.special}
+## Description
+${data.motivation}
+${data.build}
+${data.solve}
+${data.challenges}
+${data.special}
 
-        ## Installation
-        ${data.installation}
+## Installation
+${data.installation}
 
-        ## Usage
-        ${data.usage}
+## Usage
+${data.usage}
 
-        ## License
-        ${licenseLink}
+## License
+${licenseLink}
 
-        ## Contributing
-        ${data.contributing}
+## Contributing
+${data.contributing}
 
-        ## Tests
-        ${data.tests}
+## Tests
+${data.tests}
 
-        ## Questions
-        GitHub: ${data.github}
-        email: ${data.email}
-        ${data.questions}
-        `;
+## Questions
+[GitHub](https://github.com/${data.github})
+[email](mailto:${data.email})
+${data.questions}
+`;
 }
 
 module.exports = generateMarkdown;
