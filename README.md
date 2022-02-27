@@ -18,7 +18,7 @@
   * [Questions](#questions)
 
 ## Description
-   I wanted to create a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.
+   I wanted to create a command-line application that dynamically generates a professional README.md file from a user's input using the `Inquirer` package.
    I built this project so that I can quickly create a professional README for a new project.
         
 
